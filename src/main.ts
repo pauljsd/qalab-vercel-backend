@@ -7,7 +7,11 @@ async function bootstrap() {
 
   // ✅ Enable CORS for your frontend with credentials
   app.enableCors({
-    origin: ['*'], // Frontend origin (Vite dev server)
+    origin: [
+      'https://pro-forge.vercel.app',
+      'https://pro-forge-71kr.vercel.app',
+      'http://localhost:5173',
+    ],
     credentials: true, // Allow cookies or Authorization headers
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
