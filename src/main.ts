@@ -12,9 +12,9 @@ async function bootstrap() {
       'https://pro-forge-71kr.vercel.app',
       'http://localhost:5173',
     ],
-    credentials: true, // Allow cookies or Authorization headers
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
+    allowedHeaders: ['content-type, accept, authorization'],
+    credentials: true, // Allow cookies or Authorization headers
   });
 
   // ✅ Enable validation globally
