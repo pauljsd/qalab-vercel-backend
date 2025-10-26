@@ -7,7 +7,7 @@ async function bootstrap() {
 
   // ✅ Enable CORS for your frontend with credentials
   app.enableCors({
-    origin: [/\.vercel\.app$/, 'http://localhost:5173'], // Frontend origin (Vite dev server)
+    origin: ['*'], // Frontend origin (Vite dev server)
     credentials: true, // Allow cookies or Authorization headers
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
